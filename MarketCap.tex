@@ -1,0 +1,53 @@
+\documentclass[11pt,a4paper]{article}
+
+
+\usepackage[linesnumbered,ruled]{algorithm2e}
+%\usepackage{cmbright}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage[T1]{fontenc}
+
+
+\title{Crypto Additive Index}
+\author{Hiro Inu}				
+
+\begin{document} 
+\maketitle 
+\section{Introduction} 
+
+The golden standard to measure and compare cryptocurrencies is currently via market cap. Looking at price $P$ alone is not enough to grasp if a currency is under- or overvalued. Likewise, taking the supply amount ${S}$ by itself doesn't reflect the worth of the crypto. A simple solution to this problem is to take the product and obtain the market capitalisation $C = P  S$. What we expect from this is that as $P$ rises, so does $C$, while scaling with $S$. In other words we want to know $P = \frac{C}{S}$. If a coin has a large $S$, that means that $P$ will move downwards compared to coins of the same $C$. However, when there is a change in price, it doesn't matter how large $S$ is. 
+
+Since $\Delta C = \Delta P  S +  P  \Delta S$ and the supply doesn't change, $\Delta C = \Delta P  S$. If we want to look at how $C$ moves if $P$ follows a linear trend, then $\Delta C(t) = \mu \cdot S$. Now, what happens when we see the price on crypto going parabolic? When $P = \beta t ^ 2$, looking at log change, $\log(\Delta C(t)) = 2 \beta t S$. What actually happens when the price is going parabolic is that the market cap is giving linearly increasing ROI. Today the investor gets 2\%, but tomorrow he gets 3\%, and so on. 
+
+If we go back to the original definition of market cap, but with a parabolic price, we have $P = \beta t ^ 2 = \frac{C}{S}$. This means that $C = \beta S t ^ 2$. When looking at how price changes look to the investor in the form of interest rates, it makes sense. But what is really happening when we look at the market cap increasing, not in terms of either ROI or log growth. What does it really take to move the market cap of a cryptocurrency? 
+
+% $\mathbb{C}$
+
+\newpage
+
+\section{Proposal}
+
+It is easy to think that a cryptocurrency is worth its market cap. Being the most popular metric, it can be misinterpreted, since it's essentially the only "fundamental" analysis that's readily available. The fatal flaw of market cap metric is that it fails to convey the actual worth of the network. If all the coins are being traded at \$1/unit and then there are a series of \$100/unit trades, does that make all the network be worth 100 times for those moments? Market cap fails to capture the input value on trades. The metric I propose is the following:
+
+$$
+R_c^{t+1} = R_c^{t} + Q \Delta P,
+$$
+
+where $Q$ is the volume over the total supply, $\Delta P$ is the price change, and $R_c^{T}$ is the metric after $T$ price changes. What this says, starting from $R_c^{0} = 0$, is that each trade adds a specific amount of value to the metric instead of averaging over all of it. This same expression may be written in terms of volume instead of trades. This is
+
+$$
+R_c^{q+V} = R_c^{q} + V \Delta P.
+$$
+
+In the end, we try to capture value movement by fairly adjusting the index with corresponding volume. It is still impractical trying to keep up with all the price movements, so we can try to build an approximation:
+
+$$
+R_c^{n+s} = R_c^{n} + V_{s} \Delta P_{s}
+$$
+
+This poses a problem regarding gaps in prices. 
+
+
+
+\end{document} 
