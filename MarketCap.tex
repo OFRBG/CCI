@@ -1,7 +1,7 @@
 \documentclass[11pt,a4paper]{article}
 
 
-\usepackage[linesnumbered,ruled]{algorithm2e}
+%\usepackage[linesnumbered,ruled]{algorithm2e}
 %\usepackage{cmbright}
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -9,8 +9,8 @@
 \usepackage[T1]{fontenc}
 
 
-\title{Crypto Additive Index}
-\author{Hiro Inu}				
+\title{Crypto Composite Index}
+\author{Hiro Inu}			
 
 \begin{document} 
 \maketitle 
@@ -46,8 +46,20 @@ $$
 R_c^{n+s} = R_c^{n} + V_{s} \Delta P_{s}
 $$
 
-This poses a problem regarding gaps in prices. 
+This poses a problem regarding gaps in prices. Price spikes are commonplace in crypto, so taking them into consideration is more than necessary. The previous method only captures those spikes when the index is calculated with high granularity. A way to work around is is to note that price changes and volume aren't independent. One thing to note is that in crypto, the order books are considerably thin. Doing a market trade of 1000 dollars is enough to move the price up to 50\% in smaller currencies. We can say that larger price movements require proportionally higher volume. That is, $V_{s} = f(\Delta P) + V'$. Also note that
 
+\begin{equation}
+\begin{split}
+R_c^{n+s} - R_c^{n} &= \sum_{i=n+1}^{s} \frac{V_i}{S}\ \Delta P_i \\
+  &= \frac{1}{S} \sum_{i=n+1}^{s} V_i\ \Delta P_i \\
+  &= \frac{1}{S} \sum_{i=n+1}^{s} f( \Delta P_i )  \cdot \Delta P_i + V' \Delta P_i
+\end{split}
+\end{equation}
 
+For the last simplification we can think that the base volume $V' = E[V]$ and $f(P_i) = k\ P_i$. That gives the final expression
+
+$$
+R_c^{n+s} - R_c^{n} = \frac{1}{S} \sum_{i=n+1}^{s} k \Delta P_i^2  + E \left[ V \right] \Delta P_i.
+$$
 
 \end{document} 
