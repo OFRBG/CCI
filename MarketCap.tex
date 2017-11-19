@@ -56,10 +56,12 @@ R_c^{n+s} - R_c^{n} &= \sum_{i=n+1}^{s} \frac{V_i}{S}\ \Delta P_i \\
 \end{split}
 \end{equation}
 
-For the last simplification we can think that the base volume $V' = E[V]$ and $f(P_i) = k\ P_i$. That gives the final expression
+For the last simplification we can use the base volume $V' = E[V]$ and $f(P_i) = k\ | \Delta P_i |$ \footnote{This is supported with data collected over 2 weeks. In section \ref{volume}}. That gives the final expression
 
 $$
-R_c^{n+s} - R_c^{n} = \frac{1}{S} \sum_{i=n+1}^{s} k \Delta P_i^2  + E \left[ V \right] \Delta P_i.
+\Delta R_c^T = \frac{1}{S} \sum_{i=t}^{T} \left( k\ \text{sgn} (\Delta P_i) \Delta P_i^2  + E \left[ V \right] \Delta P_i \right).
 $$
+
+
 
 \end{document} 

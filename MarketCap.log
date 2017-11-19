@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.17)  18 NOV 2017 07:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.17)  19 NOV 2017 22:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -250,30 +250,41 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 16.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] (./MarketCap.aux) 
-) 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+
+LaTeX Warning: Reference `volume' on page 2 undefined on input line 59.
+
+[2] [3] (./MarketCap.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3132 strings out of 494953
- 42299 string characters out of 6180976
+ 3156 strings out of 494953
+ 42530 string characters out of 6180976
  101839 words of memory out of 5000000
- 6375 multiletter control sequences out of 15000+600000
- 13677 words of font info for 43 fonts, out of 8000000 for 9000
+ 6389 multiletter control sequences out of 15000+600000
+ 18938 words of font info for 56 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  51i,15n,27p,724b,199s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/ubuntu/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1095.600pk> </home/u
-buntu/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/ubuntu/.tex
-mf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/ubuntu/.texmf-var/fon
-ts/pk/ljfour/jknappen/ec/ecrm1728.600pk></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on MarketCap.pdf (3 pages, 97968 bytes).
+ </home/ubuntu/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0900.600pk> </home/
+ubuntu/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.600pk> </home/ubuntu/.te
+xmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0600.600pk> </home/ubuntu/.texmf-var/fo
+nts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </home/ubuntu/.texmf-var/fonts/pk/ljf
+our/jknappen/ec/ecrm1095.600pk> </home/ubuntu/.texmf-var/fonts/pk/ljfour/jknapp
+en/ec/ecbx1440.600pk> </home/ubuntu/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm
+1200.600pk> </home/ubuntu/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.600pk
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy8.pfb>
+Output written on MarketCap.pdf (3 pages, 105067 bytes).
 PDF statistics:
- 165 PDF objects out of 1000 (max. 8388607)
- 45 compressed objects within 1 object stream
+ 205 PDF objects out of 1000 (max. 8388607)
+ 61 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
