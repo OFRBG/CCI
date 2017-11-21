@@ -62,6 +62,16 @@ $$
 \Delta R_c^T = \frac{1}{S} \sum_{i=t}^{T} \left( k\ \text{sgn} (\Delta P_i) \Delta P_i^2  + E \left[ V \right] \Delta P_i \right).
 $$
 
+\section{Calculation}
+
+The main problem with this proposed index is the calculation. Choosing the intervals is possibly the most difficult task. Since the index considers individual price movements instead unlike a "state" equation, choosing the intervals to get a suitable, congruent approximation is important. Primarily we would like to calculate and recalculate after every individual trade. When we move towards larger intervals, we can depend on the standard deviation and choose a limit. The index could be calculated in such a way that for a limit threshold $\sigma_0$,
+
+$$
+R_t =  \frac{1}{S} \sum_0^T \left( k\ \text{sgn} (\Delta P_i) \Delta P_i^2  + E \left[ V_i \right] \Delta P_i \right) | s_{P_i}, s_{V_i} < \sigma_0 \forall i
+$$
+
+
+
 
 
 \end{document} 
